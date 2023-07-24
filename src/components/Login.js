@@ -9,6 +9,7 @@ import { firebaseConfig } from "./firebaseConfig";
 import { useEffect, useState } from "react";
 
 const Login = () => {
+  // eslint-disable-next-line no-unused-vars
   const app = initializeApp(firebaseConfig);
   const navigate = useNavigate();
   const location = useLocation();

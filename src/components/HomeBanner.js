@@ -1,4 +1,12 @@
+import {useNavigate} from 'react-router-dom'
+
 const HomeBanner = () => {
+    const navigate = useNavigate()
+
+    const handleClick = (e) => {
+      e.preventDefault()
+      navigate("/login")
+    }
   return (
     <div className="home-banner">
       <div className="our-story">
@@ -20,7 +28,7 @@ const HomeBanner = () => {
             className="form-control"
             placeholder="Email Address"
           />
-          <button className="input-group-button btn-danger text-white">
+          <button className="input-group-button btn-danger text-white" onClick={handleClick}>
             Get Started
           </button>
         </div>
